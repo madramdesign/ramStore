@@ -1,0 +1,22 @@
+diff --git a/AltSign/Sources/ALTAppleAPI+Authentication.swift b/AltSign/Sources/ALTAppleAPI+Authentication.swift
+index 2008582..9601a0a 100644
+--- a/AltSign/Sources/ALTAppleAPI+Authentication.swift
++++ b/AltSign/Sources/ALTAppleAPI+Authentication.swift
+@@ -564,7 +564,7 @@ private extension ALTAppleAPI
+                 "Content-Type": "text/x-xml-plist",
+                 "X-MMe-Client-Info": anisetteData.deviceDescription,
+                 "Accept": "text/x-xml-plist",
+-                "X-Xcode-Version": "27.0 (27A5218g)",
++                "X-Xcode-Version": "11.2 (11B41)",
+                 "X-Apple-App-Info": "com.apple.gs.xcode.auth",
+                 "Connection": "close",
+                 "User-Agent": self.userAgent
+@@ -630,7 +630,7 @@ private extension ALTAppleAPI
+         
+         let httpHeaders = [
+             "Accept": "text/x-xml-plist",
+-            "X-Xcode-Version": "27.0 (27A5218g)",
++            "X-Xcode-Version": "11.2 (11B41)",
+             "Connection": "close",
+             "Accept-Language": "en-us",
+             "Content-Type": "text/x-xml-plist",

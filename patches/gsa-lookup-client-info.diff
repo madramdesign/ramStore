@@ -1,0 +1,13 @@
+diff --git a/AltServer/Anisette Data/RemoteAnisetteDataFetcher.swift b/AltServer/Anisette Data/RemoteAnisetteDataFetcher.swift
+index 5fce916..ad2adc2 100644
+--- a/AltServer/Anisette Data/RemoteAnisetteDataFetcher.swift
++++ b/AltServer/Anisette Data/RemoteAnisetteDataFetcher.swift
+@@ -342,7 +342,7 @@ private extension RemoteAnisetteDataFetcher
+             }
+         }
+ 
+-        let lookupRequest = self.makeAppleRequest(for: .appleGSALookup, clientInfo: "<Mac15,7> <macOS;27.0;26A5378j> <com.apple.AuthKit/1 (com.apple.akd/1.0)>", userAgent: userAgent, identity: identity)
++        let lookupRequest = self.makeAppleRequest(for: .appleGSALookup, clientInfo: clientInfo, userAgent: userAgent, identity: identity)
+         let lookupResponse: LookupResponse = try await self.send(lookupRequest, decoder: PropertyListDecoder(), anisetteServerURL: nil)
+ 
+         guard let startProvisioningURL = URL(string: lookupResponse.urls.midStartProvisioning),
